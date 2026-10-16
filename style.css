@@ -26,6 +26,7 @@
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -156,4 +157,13 @@ footer {
 
 #switch :hover {
     background: var(--surface-color-hover);
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/assets/bg-desktop.jpg);
+    }
+    .dark {
+        --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+    }
 }
